@@ -166,11 +166,19 @@
     </PreferenceCategory>
 
     <com.android.settings.gzosp.SystemSettingSwitchPreference
+        android:key="force_show_navbar"
+        android:title="@string/navbar_show_title"
+        android:summary="@string/navbar_show_summary"
+        android:defaultValue="true"
+        settings:allowDividerAbove="true" />
+
+    <com.android.settings.gzosp.SystemSettingSwitchPreference
         android:key="enable_conditions"
         android:title="@string/dashboard_conditions_title"
         android:summaryOn="@string/summary_dashboard_conditions_enabled"
         android:summaryOff="@string/summary_dashboard_conditions_disabled"
-        android:defaultValue="true" />
+        android:defaultValue="true"
+        settings:allowDividerAbove="true" />
 
     <com.android.settings.gzosp.SystemSettingSwitchPreference
         android:key="enable_suggestions"
